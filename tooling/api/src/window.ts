@@ -83,7 +83,8 @@
  */
 
 import { invokeTauriCommand } from './helpers/tauri'
-import { EventName, EventCallback, UnlistenFn, listen, once } from './event'
+import { listen, once } from './event'
+import type { EventName, EventCallback, UnlistenFn } from './event'
 import { emit } from './helpers/event'
 
 /** Allows you to retrieve information about a given monitor. */
